@@ -13,7 +13,7 @@ public class MainController {
 	public String enviarForm(Usuario usuario) {
 		return "Login";
 	}
-	@PostMapping("/Login")
+	@PostMapping("/validacion")
 	public String procesarForm(Usuario usuario) {
 		if(usuario.getNombre().equals("admin") && usuario.getPassword().equals("password")) {
 			return "MostrarMensajeV";
